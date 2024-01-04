@@ -41,7 +41,13 @@ class Terminal_Size:
         else:clear();Console(width=self.lebar).print('Harap Perkecil Layar Terminal Anda Dengan Cara Mencubit Layar Hingga Tampilan Garis Dibawah Tidak Terlihat Putus-Putus',justify='center');Console().print('_'*60);exit()
 class baner:
     def __init__(self):clear();self.__main__()
-    def __main__(self):Console(width=60,style='bold white').print(panel('''[bold green] ____  ____        [bold red]____  ____  ____  ____   \n[bold green]( ___)(  _ \  [bold white]___ [bold red]( ___)( ___)( ___)(  _ \   \n[bold green]  )__)  ) _ < [bold white](___) [bold red])__)  )__)  )__)  )(_) )  \n[bold green](__)  (____/      [bold red](__)  (____)(____)(____/    \n''',width=60,title='[bold yellow]>[bold green]>[bold cyan]> [bold white]AUTO POST GRUP FACEBOOK [bold cyan]<[bold green]<[bold yellow]<'),justify='center')
+    def __main__(self):Console(width=60,style='bold white').print(panel('''[bold green] 
+╭━━━┳━━╮╱╭━━━╮╱╱╭╮╱╱╱╭━━━╮╱╱╱╱╱╭╮
+┃╭━━┫╭╮┃╱┃╭━╮┃╱╭╯╰╮╱╱┃╭━╮┃╱╱╱╱╭╯╰╮
+┃╰━━┫╰╯╰╮┃┃╱┃┣╮┣╮╭╋━━┫╰━╯┣━━┳━┻╮╭╯
+┃╭━━┫╭━╮┃┃╰━╯┃┃┃┃┃┃╭╮┃╭━━┫╭╮┃━━┫┃
+┃┃╱╱┃╰━╯┃┃╭━╮┃╰╯┃╰┫╰╯┃┃╱╱┃╰╯┣━━┃╰╮
+╰╯╱╱╰━━━╯╰╯╱╰┻━━┻━┻━━┻╯╱╱╰━━┻━━┻━╯    \n''',width=60,title='[bold yellow]>[bold green]>[bold cyan]> [bold white]AUTO POST GRUP FACEBOOK [bold cyan]<[bold green]<[bold yellow]<'),justify='center')
 class login_cookie:
     def __init__(self):
         self.r______ = requests.Session()
@@ -60,14 +66,14 @@ class ________________________Menu________________________():
         self.__main__()
     def __main__(self):
         Console(width=60,style='bold white').print(panel(f'''Name : {self.name}   ID : {self.id}''',width=60,title='[bold yellow]>[bold green]>[bold cyan]> [bold white]Welcome [bold cyan]<[bold green]<[bold yellow]<'),justify='center')
-        Console(width=60,style='bold white').print(panel('''[bold green][[bold white]01[bold green]].[bold white]Auto Post Group With Image\n[bold green][[bold white]02[bold green]].[bold white]Auto Post Group Text Only\n[bold green][[bold white]03[bold green]].[bold white]Requests Fitur\n[bold green][[bold white]04[bold green]].[bold red]Logout''',width=60,subtitle='┌',subtitle_align='left',title='[bold yellow]>[bold green]>[bold cyan]> [bold white]MENU [bold cyan]<[bold green]<[bold yellow]<'));______Choice______  = input('   └─> ').lower()
+        Console(width=60,style='bold white').print(panel('''[bold green][[bold white]01[bold green]].[bold white] Auto Post Group With Image\n[bold green][[bold white]02[bold green]].[bold white] Auto Post Group Text Only\n[bold green][[bold white]03[bold green]].[bold white] Requests Fitur\n[bold green][[bold white]04[bold green]].[bold red] Logout''',width=60,subtitle='┌',subtitle_align='left',title='[bold yellow]>[bold green]>[bold cyan]> [bold white]MENU [bold cyan]<[bold green]<[bold yellow]<'));______Choice______  = input('   └─> ').lower()
         if    ______Choice______  in  (     '1'     ,    '01'   )    :   __________________________________________________________________________()
         elif  ______Choice______  in  (     '2'     ,    '02'   )    :   ___________________________________________________________________________()
         elif  ______Choice______  in  (     '3'     ,    '03'   )    :   ____________________________________________________________________________()
         elif  ______Choice______  in  (     '4'     ,    '04'   )    :   
             try:open('Data/Cookie.txt', 'w');open('Data/Token.txt', 'w');sleep(2);login_cookie().login()
             except:login_cookie().login()
-        else:Console().print('   └─> [bold red]Pilih Yang Benar');sleep(2);________________________Menu________________________()
+        else:Console().print('   └─> [bold red]Pilih Yang Benar Ajg');sleep(2);________________________Menu________________________()
 class __________________________________________________________________________:
     def __init__(self):
         try:Cookie,Tokenku = open('Data/Cookie.txt', 'r', encoding='utf-8').read(),open('Data/Token.txt', 'r', encoding='utf-8').read()
